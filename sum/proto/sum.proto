@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option go_package="github.com/sohrabansari/sum-grpc/sum/proto";
+
+message SumRequest {
+    uint64 num1 = 1;
+    uint64 num2 = 2;
+}
+
+message SumResponse {
+    uint64 result = 1;
+}
+
+service SumService {
+    rpc Sum (SumRequest) returns (SumResponse);
+}
