@@ -11,8 +11,8 @@ import (
 func doSum(c pb.SumServiceClient) {
 	log.Println("Sum was invoked")
 
-	var num1 uint64
-	var num2 uint64
+	var num1 int64
+	var num2 int64
 
 	for {
 		fmt.Printf("Enter two numbers num1 num2: ")
